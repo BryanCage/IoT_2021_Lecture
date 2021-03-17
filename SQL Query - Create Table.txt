@@ -1,0 +1,91 @@
+-- Create xlab_student table
+use db_demo;
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `xlab_students`
+--
+
+CREATE TABLE `xlab_students` (
+  `student_id` int(11) NOT NULL,
+  `last_name` text DEFAULT NULL,
+  `first_name` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `xlab_students`
+--
+
+INSERT INTO `xlab_students` (`student_id`, `last_name`, `first_name`) VALUES
+(1, 'Arthur', 'Ian'),
+(2, 'Bedwell', 'Tyler'),
+(3, 'Butler', 'Daniel'),
+(4, 'Campbell', 'Nick'),
+(5, 'Chaplain', 'Callie'),
+(6, 'Elliott', 'Carter'),
+(7, 'Etka', 'Noah'),
+(8, 'Frye', 'Ethan'),
+(9, 'Gonzales', 'Max'),
+(10, 'Kelley', 'Grant'),
+(11, 'Noti', 'Matt'),
+(12, 'Sambo', 'Justine'),
+(13, 'Sanders', 'Justin'),
+(14, 'Sokolyuk', 'Kevin'),
+(15, 'Tenorio', 'Alix'),
+(16, 'Chang', 'Hsuan'),
+(17, 'Cronin', 'Sophia'),
+(18, 'Duda', 'Brandon'),
+(19, 'Girdhar', 'Aakash'),
+(20, 'Hartnett', 'John'),
+(21, 'Lager', 'Cailyn JiaJie'),
+(22, 'Policastro', 'Paul'),
+(23, 'Schmuckler', 'Daniel'),
+(24, 'Thomas', 'Andrew'),
+(25, 'Weller', 'Zach'),
+(26, 'Clary', 'Ryan'),
+(27, 'Corridon', 'Taylor'),
+(28, 'Cramton', 'Kayla'),
+(29, 'Hill', 'Cole'),
+(30, 'Munn', 'Simon'),
+(31, 'Prendergast', 'Sean'),
+(32, 'Raynes', 'Camryn'),
+(33, 'Sin', 'Joshua Sin Cheuk'),
+(34, 'Wilson', 'Truvell'),
+(35, 'Baskins', 'Ian'),
+(36, 'Szott', ' Jackson');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `xlab_students`
+--
+ALTER TABLE `xlab_students`
+  ADD PRIMARY KEY (`student_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `xlab_students`
+--
+ALTER TABLE `xlab_students`
+  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
