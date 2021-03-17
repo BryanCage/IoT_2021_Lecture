@@ -1,12 +1,12 @@
 <?php
 
 // Create variables for making a PDO Connection to our database
-$host = '35.153.18.124';
+$host = 'your server ip address goes here';
 $driver = 'mysql';
-$db_name = 'db_demo';
+$db_name = 'your database name goes here';
 $port = 3306;
-$db_username = 'bryan';
-$db_password = '$Password2020';
+$db_username = 'your database username goes here';
+$db_password = 'your database password goes here';
 $options = ['PDO::MYSQL_ATTR_INIT_COMMAND' => 'SET NAMES utf-8'];
 
 // Set Database Resource Name
