@@ -1,6 +1,6 @@
 <?php
 
-// Create variables for making a PDO Connection to our database
+// Create variables for making a PDO Connection to your database
 $host = 'your server ip address goes here';
 $driver = 'mysql';
 $db_name = 'your database name goes here';
